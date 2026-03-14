@@ -35,12 +35,12 @@ public class PurchaseHandler {
         boolean spawner = name.toLowerCase().contains("spawner");
 
         if (spawner) {
-            player.addPotionEffect(new PotionEffect(PotionEffectType.HASTE, ticks, 1, false, true, true));
+            player.addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING, ticks, 1, false, true, true));
             runCmd(plugin.getConfig().getString("commands.spawner-booster",""),
                 player, "%minutes%", String.valueOf(minutes));
         } else {
             player.addPotionEffect(new PotionEffect(PotionEffectType.LUCK, ticks, 1, false, true, true));
-            player.addPotionEffect(new PotionEffect(PotionEffectType.EXPERIENCE, ticks, 1, false, true, true));
+            player.addPotionEffect(new PotionEffect(PotionEffectType.SATURATION, ticks, 1, false, true, true));
             runCmd(plugin.getConfig().getString("commands.loot-booster",""),
                 player, "%minutes%", String.valueOf(minutes));
         }
