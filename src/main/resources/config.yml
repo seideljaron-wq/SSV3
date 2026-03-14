@@ -1,0 +1,28 @@
+# ShardSystem v3 Configuration
+admins: []
+discord-webhook-url: "YOUR_WEBHOOK_URL_HERE"
+store-url: "store.runemc.org"
+
+# Console commands on purchase
+# Placeholders: %player% %rows% %crate% %tag% %color% %gradient% %minutes%
+# Leave "" to skip
+commands:
+  vault-expand: "pv expand %player% %rows%"
+  vault-extra: "pv give %player% 1"
+  crate-key: "crates key give %player% %crate% 1"
+  spawner-booster: ""
+  loot-booster: ""
+  chat-tag: ""
+  chat-color: ""
+  gradient: ""
+  glow: ""
+
+# LuckPerms permissions given on purchase
+permissions:
+  chat-tag: "chatcolor.tag.%tag%"
+  chat-color: "chatcolor.color.%color%"
+  gradient: "chatcolor.gradient.%gradient%"
+  glow: "glow.color.%color%"
+
+shop:
+  items: []

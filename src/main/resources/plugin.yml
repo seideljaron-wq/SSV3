@@ -1,0 +1,21 @@
+name: ShardSystem
+version: '${project.version}'
+main: dev.shardsystem.ShardSystem
+api-version: '1.20'
+description: ShardSystem v3 - RuneMC Shard Shop
+authors: [RuneMC]
+softdepend: [PlaceholderAPI, Vault, LuckPerms]
+permissions:
+  shards.admin:
+    default: op
+  shards.give:
+    default: op
+  shards.shop.manage:
+    default: op
+commands:
+  shard-admin:
+    usage: /shard-admin <add|remove> <player>
+  shard-give:
+    usage: /shard-give <player> <amount>
+  shardshop:
+    usage: /shardshop [sell <price>|delete]
